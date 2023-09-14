@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "image": "https://i.ibb.co/WnSxnqZ/c-programming.png",
+        "title": "Introduction to C Programming",
+        "description": "Learn the fundamentals of C programming language in this introductory course. Explore syntax, data types, and basic programming concepts. Start your journey into the world of C development today!",
+        "price": 49.99,
+        "credit": 3
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co/TWn939g/DSA.png",
+        "title": "Introduction to Algorithms",
+        "description": "Master algorithmic problem-solving with this course. Explore various algorithms and their applications. Enhance your problem-solving skills and algorithmic thinking.",
+        "price": 59.99,
+        "credit": 4
+    },
+    {
+        "id": 3,
+        "image": "https://i.ibb.co/zXhmwvP/c-plus-plus.png",
+        "title": "Introduction to C++ for DSA",
+        "description": "Get started with C++ programming for Data Structures and Algorithms (DSA). Learn C++ syntax, object-oriented concepts, and algorithms. Begin your journey as a DSA developer today!",
+        "price": 54.99,
+        "credit": 3
+    },
+    {
+        "id": 4,
+        "image": "https://i.ibb.co/6XggK5w/data-structure.png",
+        "title": "Basic Data Structures",
+        "description": "Explore fundamental data structures and their implementations. Learn about arrays, linked lists, stacks, and queues. Build a strong foundation in data structures.",
+        "price": 64.99,
+        "credit": 4
+    },
+    {
+        "id": 5,
+        "image": "https://i.ibb.co/4TD85VM/python-oop.png",
+        "title": "Introduction to OOP Python",
+        "description": "Delve into object-oriented programming (OOP) with Python. Learn about classes, inheritance, and polymorphism. Take your Python programming skills to an object-oriented level!",
+        "price": 69.99,
+        "credit": 4
+    },
+    {
+        "id": 6,
+        "image": "https://i.ibb.co/pxpMRbp/software-enginnering.png",
+        "title": "Software Engineering",
+        "description": "Explore the principles and practices of software engineering. Learn about software development methodologies and project management. Launch your career in software engineering!",
+        "price": 79.99,
+        "credit": 5
+    },
+    {
+        "id": 7,
+        "image": "https://i.ibb.co/wgzXc9N/aws-cloud.png",
+        "title": "Cloud Computing",
+        "description": "Discover the fundamentals of cloud computing. Explore cloud service models and deployment options. Begin your journey into the world of cloud technology!",
+        "price": 89.99,
+        "credit": 5
+    },
+    {
+        "id": 8,
+        "image": "https://i.ibb.co/k6PTy2W/database.png",
+        "title": "Database (MySQL)",
+        "description": "Master MySQL database management. Learn SQL queries, database design, and optimization. Elevate your skills in MySQL and database administration.",
+        "price": 69.99,
+        "credit": 4
+    },
+    {
+        "id": 9,
+        "image": "https://i.ibb.co/yddLt08/Rectangle-2-6.png",
+        "title": "Problem-Solving Part",
+        "description": "Enhance your problem-solving skills with this comprehensive course. Explore various problem-solving techniques and strategies. Become a proficient problem solver!",
+        "price": 49.99,
+        "credit": 3
+    }
+]
