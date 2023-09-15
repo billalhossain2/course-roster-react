@@ -1,9 +1,15 @@
 import { FaBookOpen, FaDollarSign } from 'react-icons/fa';
 import PropTypes from 'prop-types';
+import Swal from 'sweetalert2'
 const Course = ({course, selectedCourses, setSelectedCourses}) => {
   const {image, title, description, price, credit} = course;
 
   const handleSelectCourse = (course)=>{
+    //check if the course already exist or not
+    const isExist = selectedCourses.find(selectedC => selectedC.id === course.id);
+    if(isExist){
+       return Swal.fire('You have already selected this course!')
+    }
     setSelectedCourses([...selectedCourses, course])
   }
   return (
