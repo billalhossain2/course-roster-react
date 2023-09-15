@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import Course from "../Course/Course";
 
-const Courses = ({ selectedCourses, setSelectedCourses }) => {
+const Courses = ({ selectedCourses, setSelectedCourses, creditHour, setCreditHour }) => {
   const [courses, setCourses] = useState([]);
 
   useEffect(() => {
@@ -11,7 +11,7 @@ const Courses = ({ selectedCourses, setSelectedCourses }) => {
       .then((data) => setCourses(data))
       .catch((error) => console.log("Something went wrong ", error));
   }, []);
-  
+
   return (
     <div className="flex-1 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
       {courses.map((course) => (
@@ -20,6 +20,8 @@ const Courses = ({ selectedCourses, setSelectedCourses }) => {
           course={course}
           selectedCourses={selectedCourses}
           setSelectedCourses={setSelectedCourses}
+          setCreditHour={setCreditHour}
+          creditHour={creditHour}
         ></Course>
       ))}
     </div>

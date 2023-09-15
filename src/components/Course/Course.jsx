@@ -1,15 +1,23 @@
 import { FaBookOpen, FaDollarSign } from 'react-icons/fa';
 import PropTypes from 'prop-types';
 import Swal from 'sweetalert2'
-const Course = ({course, selectedCourses, setSelectedCourses}) => {
+const Course = ({course, selectedCourses, setSelectedCourses, creditHour, setCreditHour}) => {
   const {image, title, description, price, credit} = course;
 
   const handleSelectCourse = (course)=>{
+    const remainingHour = ()=>creditHour - course.credit;
     //check if the course already exist or not
     const isExist = selectedCourses.find(selectedC => selectedC.id === course.id);
+
     if(isExist){
-       return Swal.fire('You have already selected this course!')
+      return Swal.fire('You have already selected this course!')
+   }
+   
+    if(remainingHour() < 0){
+      return Swal.fire('You do not have remaining hour!')
     }
+
+    setCreditHour(remainingHour)
     setSelectedCourses([...selectedCourses, course])
   }
   return (
@@ -31,7 +39,9 @@ const Course = ({course, selectedCourses, setSelectedCourses}) => {
 Course.propTypes = {
   course:PropTypes.object.isRequired,
   selectedCourses:PropTypes.array.isRequired,
-  setSelectedCourses:PropTypes.func.isRequired
+  setSelectedCourses:PropTypes.func.isRequired,
+  creditHour:PropTypes.number.isRequired,
+  setCreditHour:PropTypes.func.isRequired
 }
 
 export default Course
