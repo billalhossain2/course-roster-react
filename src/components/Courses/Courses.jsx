@@ -2,7 +2,12 @@ import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import Course from "../Course/Course";
 
-const Courses = ({ selectedCourses, setSelectedCourses, creditHour, setCreditHour }) => {
+const Courses = ({
+  selectedCourses,
+  setSelectedCourses,
+  creditHour,
+  setCreditHour,
+}) => {
   const [courses, setCourses] = useState([]);
 
   useEffect(() => {

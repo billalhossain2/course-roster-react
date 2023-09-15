@@ -6,7 +6,7 @@ function App() {
   const [selectedCourses, setSelectedCourses] = useState([]);
   const [creditHour, setCreditHour] = useState(20);
   return (
-    <div>
+    <div className="mb-20">
       <h1 className="text-3xl font-bold text-center my-10">
         Course Registration
       </h1>

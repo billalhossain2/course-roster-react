@@ -5,7 +5,7 @@
         "title": "Introduction to C Programming",
         "description": "Learn the fundamentals of C programming language in this introductory course. Explore syntax, data types, and basic programming concepts. Start your journey into the world of C development today!",
         "price": 49.99,
-        "credit": 3
+        "credit": 1
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "title": "Introduction to Algorithms",
         "description": "Master algorithmic problem-solving with this course. Explore various algorithms and their applications. Enhance your problem-solving skills and algorithmic thinking.",
         "price": 59.99,
-        "credit": 4
+        "credit": 2
     },
     {
         "id": 3,
@@ -69,6 +69,6 @@
         "title": "Problem-Solving Part",
         "description": "Enhance your problem-solving skills with this comprehensive course. Explore various problem-solving techniques and strategies. Become a proficient problem solver!",
         "price": 49.99,
-        "credit": 3
+        "credit": 2
     }
 ]
