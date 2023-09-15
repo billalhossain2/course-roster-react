@@ -12,9 +12,9 @@ const Course = ({course, selectedCourses, setSelectedCourses, creditHour, setCre
     if(isExist){
       return Swal.fire('You have already selected this course!')
    }
-   
+
     if(remainingHour() < 0){
-      return Swal.fire('You do not have remaining hour!')
+      return Swal.fire('You do not have enough remaining hour!')
     }
 
     setCreditHour(remainingHour)
