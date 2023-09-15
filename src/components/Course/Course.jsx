@@ -1,7 +1,7 @@
 import { FaBookOpen, FaDollarSign } from "react-icons/fa";
 import PropTypes from "prop-types";
-import Swal from "sweetalert2";
-
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Course = ({
   course,
   selectedCourses,
@@ -22,13 +22,11 @@ const Course = ({
     );
 
     if (isExist) {
-      return Swal.fire("You have already selected this course!");
+      return toast.warn("You have already selected this course!", {position:'top-right', autoClose:2000, theme:'dark'});
     }
 
     if (remainingHour() < 0) {
-      return Swal.fire(
-        "You do not have enough remaining hour to select this course!"
-      );
+      return toast.warn("You don't have enough credit hour to select this course!", {position:'top-right', autoClose:2000});
     }
 
     setCreditHour(remainingHour);
